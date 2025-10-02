@@ -95,8 +95,6 @@ go run main.go createwallet
 New address is: 1AT49VfoewnW9iQExVgHM8ZfxrGmysV7qX
 ```
 
-*Screenshot placeholder: Wallet creation success message*
-
 ### 3. Create a Blockchain
 
 ```bash
@@ -114,8 +112,6 @@ Genesis created
 Finished!
 ```
 
-*Screenshot placeholder: Blockchain creation with genesis block*
-
 ### 4. Check Your Balance
 
 ```bash
@@ -131,8 +127,6 @@ go run main.go getbalance -address 1AT49VfoewnW9iQExVgHM8ZfxrGmysV7qX
 ```
 Balance of 1AT49VfoewnW9iQExVgHM8ZfxrGmysV7qX: 20
 ```
-
-*Screenshot placeholder: Balance check showing 20 coins (genesis reward)*
 
 ### 5. Create Another Wallet
 
@@ -161,8 +155,6 @@ go run main.go send -from 1AT49VfoewnW9iQExVgHM8ZfxrGmysV7qX -to 1BvBMSEYstWetqT
 Success!
 ```
 
-*Screenshot placeholder: Transaction sending with mining progress*
-
 ### 7. Verify Transaction
 
 Check the balance of both addresses:
@@ -177,8 +169,6 @@ go run main.go getbalance -address 1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2
 Balance of 1AT49VfoewnW9iQExVgHM8ZfxrGmysV7qX: 15
 Balance of 1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2: 5
 ```
-
-*Screenshot placeholder: Balance verification showing transaction completed*
 
 ## 📋 Available Commands
 
@@ -217,8 +207,6 @@ PoW: true
        Script: 1234567890abcdef...
 ```
 
-*Screenshot placeholder: Blockchain visualization showing blocks and transactions*
-
 ### List All Addresses
 
 ```bash
@@ -231,8 +219,6 @@ go run main.go listaddresses
 1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2
 ```
 
-*Screenshot placeholder: List of all wallet addresses*
-
 ### Start a Mining Node
 
 ```bash
@@ -244,8 +230,6 @@ go run main.go startnode -miner YOUR_ADDRESS
 Starting Node 3000
 Mining is on. Address to receive rewards: 1AT49VfoewnW9iQExVgHM8ZfxrGmysV7qX
 ```
-
-*Screenshot placeholder: Mining node startup and network connection*
 
 ## 🌐 P2P Network
 
@@ -263,7 +247,16 @@ $env:NODE_ID = "3001"
 go run main.go startnode
 ```
 
-*Screenshot placeholder: Multiple nodes running and communicating*
+**Expected Output (Node 3000):**
+```
+Starting Node 3000
+Mining is on. Address to receive rewards: 1AT49VfoewnW9iQExVgHM8ZfxrGmysV7qX
+```
+
+**Expected Output (Node 3001):**
+```
+Starting Node 3001
+```
 
 ### Network Commands
 
@@ -383,5 +376,3 @@ If you have any questions or need help:
 ---
 
 **⭐ Star this repository if you found it helpful!**
-
-*Screenshot placeholder: GitHub repository with star button*
